@@ -1,0 +1,11 @@
+version: '3'
+services:
+  bf:
+    container_name: bf
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ../src:/usr/src
+    tty: true
+    stdin_open: true
